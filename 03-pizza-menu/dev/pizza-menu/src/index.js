@@ -68,15 +68,15 @@ function Header() {
 }
 
 function Menu() {
-  const pizzas = pizzaData;
+  const pizzas = [];
   return (
     <main className="menu">
       <h2>Our Menu</h2>
       {!!pizzas.length && (
         <>
           <p>
-            Authentic Italian cuisine. 6 creative dishes to choose from. All from our stone oven,
-            all organic, all delicious.
+            Authentic Italian cuisine. 6 creative dishes to choose from. All
+            from our stone oven, all organic, all delicious.
           </p>
           <ul className="pizzas">
             {pizzas.map((pizza) => (
